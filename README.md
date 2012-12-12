@@ -1,1 +1,1 @@
-These are all of the artist statements i have ever written
+hey max you should make a pull request
