@@ -1,3 +1,4 @@
 other ideas:
 	- keep track of all of the programes and times that we use them while working on this project
 	- install key loggers that we can initiate when we are working on the project so we end up with all the keys we pressed while working on the project 
+	test for merge 
