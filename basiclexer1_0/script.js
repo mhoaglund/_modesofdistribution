@@ -9,18 +9,24 @@ $("#lex").click(function(){
       origPrep.forEach(function(entry) {
         
         if(entry == "dance"){
-         lexed.push("theory"); 
+          entry = "theory";
         }
         if(entry == "theory"){
-         lexed.push("guess"); 
+          entry = "guess";
         }
         if(entry == "labor" || entry == "handicap" || entry == "achievement"){
-         lexed.push("work"); 
+          entry = "work";
         }
-
+        if(entry == "literature"){
+          var lit = entry.split("");
+          entry = "";
+          lexed.push(lit.join(" "));
+        }
+        if(entry.length >= 12){
+          entry = "development";
+        }
         else lexed.push(entry);
       });
-      $("#lexed").val("");
       $("#lexed").val(lexed.join(" "));
     });
 });
