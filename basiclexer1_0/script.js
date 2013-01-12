@@ -3,7 +3,15 @@ $(document).ready(function(){
   var lexicon = {
     "dance": { "trans":"wetness" },
     "theory": { "trans":"guess" },
-    "lexicon": { "trans":"box"}
+    "lexicon": { "trans":"box"},
+    "labor": { "trans":"work"},
+    "environment": { "trans":"weather"},
+    "commit": { "trans":"engage"},
+    "lexer": { "trans":"box"},
+    "changes": { "trans":"voyages"},
+    "updates": { "trans":"journeys"},
+    "alter": { "trans":"ruin"},
+    "altered": { "trans":"ruined"},
   }
 
   $("#lex").click(function(){ 
