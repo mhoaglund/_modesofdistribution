@@ -17,14 +17,15 @@ $("#lex").click(function(){
         if(entry == "labor" || entry == "handicap" || entry == "achievement"){
           entry = "work";
         }
+        if(entry.length >= 12){
+          entry = "development";
+        }
         if(entry == "literature"){
           var lit = entry.split("");
           entry = "";
           lexed.push(lit.join(" "));
         }
-        if(entry.length >= 12){
-          entry = "development";
-        }
+       
         else lexed.push(entry);
       });
       $("#lexed").val(lexed.join(" "));
