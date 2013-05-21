@@ -1,10 +1,32 @@
 .main{
-    margin: auto;
+	width: 940px;
+	margin: auto;
 }
 
-.textarea input{
+.main textarea, input{
+	resize: none;
     float:left;
     width: 250px;
     height: auto;
     min-height:400px;
+}
+
+.main a{
+	float: left;
+	display: inline;
+}
+
+.main a span{
+	display: block;
+	width: 400px;
+	height: 260px;
+	background: url('flair/literature.png') no-repeat 0px -260px;
+}
+
+.main a span:hover{
+background: url('flair/literature.png') no-repeat 0px 0px;
+}
+
+.main a span:active{
+background: url('flair/literature.png') no-repeat 0px -260px;
 }

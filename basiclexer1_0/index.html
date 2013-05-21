@@ -1,15 +1,18 @@
 
 <html>
 		<head>
-		<script type="text/vbscript" src="http://someplace.com/progs/vbcalc"></script>
+		<script src="jquery-1.8.3.js"></script>
+		<script type="text/javascript" src="script.js"></script>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		</head>
 	<body>
-		<div class="main">
-		  <div class="textarea">
-		    <input type="text" name="orig" id="orig" value="">
-		    <input type="button" name="lex" id="lex" value="click">
-		    <input type="text" name="lexed" id="lexed">
+		<div>
+		  <div class="main">
+		    <textarea type="text" id="orig"></textarea>
+		    <a id="lex">
+		    	<span></span>
+		    </a>
+		    <textarea type="text" id="lexed"></textarea>
 		  </div>
 		</div>
 	</body>
