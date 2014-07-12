@@ -5,6 +5,7 @@
 
 var express = require('express')
   , routes = require('./routes')
+  , twitter = require('./routes/twitter')
   , user = require('./routes/user')
   , http = require('http')
   , path = require('path');
@@ -29,6 +30,7 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
+app.get('/twitter', twitter.index);
 app.get('/users', user.list);
 
 http.createServer(app).listen(app.get('port'), function(){
